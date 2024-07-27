@@ -24,14 +24,17 @@ rootProject.buildscript {
                     // We can't use uri() here because we aren't running inside something
                     // that implements the Script interface.
                     url "file:${path}"
+                    allowInsecureProtocol = true
                 }
             }
         }
         maven {
             url "http://repository.springsource.com/maven/bundles/release"
+            allowInsecureProtocol = true
         }
         maven {
             url "http://repository.springsource.com/maven/bundles/external"
+            allowInsecureProtocol = true
         }
         if (rosMavenRepository != null) {
             maven {
@@ -40,6 +43,7 @@ rootProject.buildscript {
         }
         maven {
             url "https://github.com/rosjava/rosjava_mvn_repo/raw/master"
+            allowInsecureProtocol = true
         }
         google()
         jcenter()
