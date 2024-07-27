@@ -9,6 +9,7 @@ import java.util.HashMap
  */
 class RosAndroidPlugin implements Plugin<Project> {
   void apply(Project project) {
+    logger.info("Applied here")
     project.apply plugin: "ros"
     project.extensions.create("rosandroid", RosAndroidPluginExtension)
     project.rosandroid.buildToolsVersion = "28.0.3"
