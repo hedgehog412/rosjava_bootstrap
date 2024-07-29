@@ -49,7 +49,7 @@ class RosPlugin implements Plugin<Project> {
        * provide a repository of their own via the environment variable and use this as a fallback.
        */
       maven {
-        url "https://github.com/hedgehog412/rosjava_mvn_repo/tree/master"
+        url "https://github.com/hedgehog412/rosjava_mvn_repo/raw/master"
         allowInsecureProtocol = true
       }
       mavenLocal()
