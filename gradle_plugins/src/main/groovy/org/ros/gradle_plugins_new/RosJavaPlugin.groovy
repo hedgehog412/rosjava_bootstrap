@@ -36,7 +36,7 @@ class RosJavaPlugin implements Plugin<Project> {
                 }
                 repositories {
                     maven {
-                       url 'file://' + "https://github.com/hedgehog412/rosjava_mvn_repo"
+                       url 'file://' + "https://github.com/hedgehog412/rosjava_mvn_repo/tree/master"
                        allowInsecureProtocol = true
                     }
                 }

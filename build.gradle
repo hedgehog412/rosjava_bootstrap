@@ -44,7 +44,7 @@ subprojects {
   }
 
   // Configuration of the deployment repository is copied from the RosPlugin.
-  String mavenDeploymentRepository = "https://github.com/hedgehog412/rosjava_mvn_repo" //System.getenv("ROS_MAVEN_DEPLOYMENT_REPOSITORY")
+  String mavenDeploymentRepository = "https://github.com/hedgehog412/rosjava_mvn_repo/tree/master" //System.getenv("ROS_MAVEN_DEPLOYMENT_REPOSITORY")
   if (mavenDeploymentRepository != null &&
       mavenDeploymentRepository != "") {
     publishing {

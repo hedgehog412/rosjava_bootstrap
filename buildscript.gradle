@@ -17,7 +17,7 @@
 rootProject.buildscript {
     String rosMavenPath = System.getenv("ROS_MAVEN_PATH")
     // String rosMavenRepository = System.getenv("ROS_MAVEN_REPOSITORY")
-    String rosMavenRepository = "https://github.com/hedgehog412/rosjava_mvn_repo"
+    String rosMavenRepository = "https://github.com/hedgehog412/rosjava_mvn_repo/tree/master"
     repositories {
         if (rosMavenPath != null) {
             rosMavenPath.tokenize(":").each { path ->

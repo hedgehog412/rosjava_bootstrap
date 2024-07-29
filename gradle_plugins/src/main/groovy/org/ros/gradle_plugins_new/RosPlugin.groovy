@@ -23,8 +23,8 @@ class RosPlugin implements Plugin<Project> {
     project.extensions.create("ros", RosPluginExtension)
 
     // project.ros.mavenRepository = System.getenv("ROS_MAVEN_REPOSITORY")
-    project.ros.mavenRepository = "https://github.com/hedgehog412/rosjava_mvn_repo"
-    project.ros.mavenDeploymentRepository = "https://github.com/hedgehog412/rosjava_mvn_repo"
+    project.ros.mavenRepository = "https://github.com/hedgehog412/rosjava_mvn_repo/tree/master"
+    project.ros.mavenDeploymentRepository = "https://github.com/hedgehog412/rosjava_mvn_repo/tree/master"
     String mavenPath = System.getenv("ROS_MAVEN_PATH")
     if (mavenPath != null) {
       project.ros.mavenPath = mavenPath.tokenize(":")
@@ -49,7 +49,7 @@ class RosPlugin implements Plugin<Project> {
        * provide a repository of their own via the environment variable and use this as a fallback.
        */
       maven {
-        url "https://github.com/hedgehog412/rosjava_mvn_repo"
+        url "https://github.com/hedgehog412/rosjava_mvn_repo/tree/master"
         allowInsecureProtocol = true
       }
       mavenLocal()
