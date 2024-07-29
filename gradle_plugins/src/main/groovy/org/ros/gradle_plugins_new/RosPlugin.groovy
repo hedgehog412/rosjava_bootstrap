@@ -61,7 +61,7 @@ class RosPlugin implements Plugin<Project> {
         url "http://repository.springsource.com/maven/bundles/external"
         allowInsecureProtocol = true
       }
-      jcenter()
+      mavenCentral()
     }
   }
 }
