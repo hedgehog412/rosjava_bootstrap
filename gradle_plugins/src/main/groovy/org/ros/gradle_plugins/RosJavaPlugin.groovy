@@ -37,6 +37,7 @@ class RosJavaPlugin implements Plugin<Project> {
                 repositories {
                     maven {
                        url 'file://' + project.ros.mavenDeploymentRepository
+                       allowInsecureProtocol = true
                     }
                 }
             }

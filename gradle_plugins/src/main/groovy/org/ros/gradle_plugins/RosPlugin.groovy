@@ -33,12 +33,14 @@ class RosPlugin implements Plugin<Project> {
         project.ros.mavenPath.each { path ->
           maven {
             url project.uri(path)
+            allowInsecureProtocol = true
           }
         }
       }
       if (project.ros.mavenRepository != null) {
         maven {
           url project.ros.mavenRepository
+          allowInsecureProtocol = true
         }
       }
       /* 
@@ -47,13 +49,16 @@ class RosPlugin implements Plugin<Project> {
        */
       maven {
         url "https://github.com/rosjava/rosjava_mvn_repo/raw/master"
+        allowInsecureProtocol = true
       }
       mavenLocal()
       maven {
         url "http://repository.springsource.com/maven/bundles/release"
+        allowInsecureProtocol = true
       }
       maven {
         url "http://repository.springsource.com/maven/bundles/external"
+        allowInsecureProtocol = true
       }
       jcenter()
     }
