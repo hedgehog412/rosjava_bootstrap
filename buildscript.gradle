@@ -47,7 +47,7 @@ rootProject.buildscript {
             allowInsecureProtocol = true
         }
         google()
-        jcenter()
+        mavenCentral()
     }
     dependencies {
         classpath "org.ros.rosjava_bootstrap:gradle_plugins_new:[0.3,0.4)"
