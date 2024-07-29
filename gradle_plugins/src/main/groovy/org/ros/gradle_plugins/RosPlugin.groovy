@@ -22,7 +22,8 @@ class RosPlugin implements Plugin<Project> {
 
     project.extensions.create("ros", RosPluginExtension)
 
-    project.ros.mavenRepository = System.getenv("ROS_MAVEN_REPOSITORY")
+    // project.ros.mavenRepository = System.getenv("ROS_MAVEN_REPOSITORY")
+    project.ros.mavenRepository = "https://github.com/hedgehog412/rosjava_mvn_repo"
     project.ros.mavenDeploymentRepository = System.getenv("ROS_MAVEN_DEPLOYMENT_REPOSITORY")
     String mavenPath = System.getenv("ROS_MAVEN_PATH")
     if (mavenPath != null) {
