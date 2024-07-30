@@ -1,4 +1,4 @@
-package org.ros.gradle_plugins_new;
+package org.ros.gradle_plugins;
 
 import org.gradle.api.Project
 import org.gradle.api.Plugin

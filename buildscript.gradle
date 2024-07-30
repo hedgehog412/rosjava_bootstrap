@@ -50,6 +50,6 @@ rootProject.buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath "org.ros.rosjava_bootstrap:gradle_plugins_new:[0.3,0.4)"
+        classpath "org.ros.rosjava_bootstrap:gradle_plugins:[0.3,0.4)"
     }
 }
